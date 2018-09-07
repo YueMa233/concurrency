@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 项目中用来标记【线程安全】的类
  */
-@Target(ElementType.ANNOTATION_TYPE)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.SOURCE)
 public @interface ThreadSafe {
     String value() default "";
